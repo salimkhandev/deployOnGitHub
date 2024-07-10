@@ -38,7 +38,7 @@ MongoClient.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
 
     // GET route for home
     app.get("/", (req, res) => {
-      res.send("You are at home");
+      res.send("You are at home and i can see you");
     });
 
     app.listen(port, () => {
