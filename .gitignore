@@ -17,3 +17,4 @@
 
 # MongoDB data directory (if applicable)
 /dbdata
+.vercel
