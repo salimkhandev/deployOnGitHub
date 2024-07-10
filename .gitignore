@@ -1,0 +1,19 @@
+# Node modules
+/node_modules
+
+# Build artifacts
+/build
+/dist
+
+# Environment variables
+.env
+
+# IDE and editor files
+/.idea
+.vscode
+
+# Logs
+*.log
+
+# MongoDB data directory (if applicable)
+/dbdata

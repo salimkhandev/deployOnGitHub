@@ -1,0 +1,30 @@
+{
+  "name": "formbackend",
+  "version": "1.0.0",
+  "homepage": "https://salimkhandev.github.io/deployOnGitHub",
+  
+  "main": "index.js",
+
+  "type": "commonjs",
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.5.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+
+  }
+}
