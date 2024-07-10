@@ -20,6 +20,7 @@ MongoClient.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
     const collection = db.collection("formData"); // Replace with your collection name
 
     // POST route to add data
+    // and this will 
     app.post("/form", (req, res) => {
       const data = req.body;
 
