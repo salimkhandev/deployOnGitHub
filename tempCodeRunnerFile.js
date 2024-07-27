@@ -20,6 +20,7 @@ MongoClient.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
     const collection = db.collection("formData"); // Replace with your collection name
 
     // POST route to add data
+    // and this will 
     app.post("/form", (req, res) => {
       const data = req.body;
 
@@ -35,17 +36,9 @@ MongoClient.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
         });
     });
 
-    // GET route to retrieve all documents
-    app.get('/admin', async (req, res) => {
-      try {
-        // Assuming you have authentication/authorization checks in place
-        const documents = await collection.find({}).toArray(); // Convert cursor to array
-        // Process the documents as needed
-        res.status(200).json(documents); // Send the fetched data as a JSON response
-      } catch (error) {
-        console.error(error);
-        res.status(500).send('Internal Server Error');
-      }
+    // GET route for home
+    app.get("/", (req, res) => {
+      res.send("You are at home and i can se");
     });
 
     app.listen(port, () => {
